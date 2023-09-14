@@ -22,15 +22,15 @@ public class Pizza {
     public int getPaperBag(){
         return paperBag;
     }
-    public void setExtraCheese(){
-        extraCheese=80;
-        price+=extraCheese;
-    }
-    public void setToppings(Boolean isVeg){
-        if(isVeg)Toppings=70;
-        else Toppings=120;
-        price+=Toppings;
-    }
+//    public void setExtraCheese(){
+//        extraCheese=80;
+//        price+=extraCheese;
+//    }
+//    public void setToppings(Boolean isVeg){
+//        if(isVeg)Toppings=70;
+//        else Toppings=120;
+//        price+=Toppings;
+//    }
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
