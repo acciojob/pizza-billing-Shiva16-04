@@ -3,7 +3,7 @@ package com.driver;
 public class Pizza {
 
     private int price=0;
-    Boolean isVeg;
+    Boolean isVeg=true;
     private String bill="";
 
     private int Pizza=0;
@@ -49,23 +49,23 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        extraCheese+=80;
+        extraCheese=80;
         price+=80;
     }
 
     public void addExtraToppings(){
         if(isVeg){
-            Toppings+=70;
+            Toppings=70;
             price+=70;
         }else{
-            Toppings+=120;
+            Toppings=120;
             price+=120;
         }
     }
 
     public void addTakeaway(){
         // your code goes here
-        paperBag+=20;
+        paperBag=20;
         price+=20;
     }
 
