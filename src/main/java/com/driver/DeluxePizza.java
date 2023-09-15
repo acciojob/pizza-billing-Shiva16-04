@@ -4,7 +4,8 @@ public class DeluxePizza extends Pizza {
     private String bill;
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
-//        setExtraadd
+        setExtraCheese();
+        setToppings(isVeg);
     }
     @Override
     public void addExtraCheese() {
