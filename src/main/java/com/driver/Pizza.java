@@ -22,15 +22,6 @@ public class Pizza {
     public int getPaperBag(){
         return paperBag;
     }
-    public void setExtraCheese(){
-        extraCheese=80;
-        price+=extraCheese;
-    }
-    public void setToppings(Boolean isVeg){
-        if(isVeg)Toppings=70;
-        else Toppings=120;
-        price+=Toppings;
-    }
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -49,24 +40,24 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
+        if(extraCheese==0)price+=80;
         extraCheese=80;
-        price+=80;
     }
 
     public void addExtraToppings(){
         if(isVeg){
+            if(Toppings==0)price+=70;
             Toppings=70;
-            price+=70;
         }else{
+            if(Toppings==0)price+=120;
             Toppings=120;
-            price+=120;
         }
     }
 
     public void addTakeaway(){
         // your code goes here
+        if(paperBag==0)price+=20;
         paperBag=20;
-        price+=20;
     }
 
     public String getBill(){

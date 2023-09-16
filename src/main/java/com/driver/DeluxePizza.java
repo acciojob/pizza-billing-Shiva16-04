@@ -4,8 +4,8 @@ public class DeluxePizza extends Pizza {
     private String bill;
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
-        setExtraCheese();
-        setToppings(isVeg);
+        addExtraCheese();
+        addExtraToppings();
     }
     @Override
     public void addExtraCheese() {
@@ -29,10 +29,10 @@ public class DeluxePizza extends Pizza {
     @Override
     public String getBill() {
         bill="Base Price Of The Pizza: "+ getPizza() +"\n";
-        if(getExtraCheese() >0){
+        if(getExtraCheese() !=0){
             bill+="Extra Cheese Added: "+ getExtraCheese() +"\n";
         }
-        if(getToppings() >0){
+        if(getToppings() !=0){
             bill+="Extra Toppings Added: "+ getToppings() +"\n";
         }
         if(getPaperBag() !=0){
