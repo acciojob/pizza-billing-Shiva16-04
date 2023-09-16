@@ -3,7 +3,7 @@ package com.driver;
 public class Pizza {
 
     private int price=0;
-    Boolean isVeg=true;
+    Boolean isVeg;
     private String bill="";
 
     private int Pizza=0;
@@ -72,7 +72,7 @@ public class Pizza {
             bill+="Paperbag Added: "+paperBag+"\n";
         }
         bill+="Total Price: "+price;
-
+        Pizza=0;extraCheese=0;Toppings=0;paperBag=0;price=0;
         return this.bill;
     }
 }
