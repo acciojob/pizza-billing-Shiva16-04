@@ -41,7 +41,9 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
         if(extraCheese==0)price+=80;
+
         extraCheese=80;
+
     }
 
     public void addExtraToppings(){
